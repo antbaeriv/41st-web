@@ -1,0 +1,40 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.fortyfirst.orbat",
+      "nativeLanguage": "es"
+    },
+    "jhipsterVersion": "6.0.1",
+    "applicationType": "monolith",
+    "baseName": "41st",
+    "packageName": "com.fortyfirst.orbat",
+    "packageFolder": "com/fortyfirst/orbat",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "mysql",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZTFiY2U5ODUwODk5Y2U1ZTU4MGNjZDg2YzIxN2I0MTcxN2E5MTUyYjk1ZmNlZjg0ZWYyMTI2ZTFkMDQ3NDFlZjA1Y2NhYmNkOWNlMzk4YTFhMTI1MDQzM2RkYzhlMTY4MDhmOTAyMDVhYTQyYWI4ZDAwNjY5ZjJlOTUyMTU0OGU=",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "es",
+    "languages": ["es", "en"]
+  }
+}
