@@ -46,6 +46,7 @@ public class CacheConfiguration {
             createCache(cm, com.fortyfirst.orbat.domain.User.class.getName());
             createCache(cm, com.fortyfirst.orbat.domain.Authority.class.getName());
             createCache(cm, com.fortyfirst.orbat.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.fortyfirst.orbat.domain.Troopers.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

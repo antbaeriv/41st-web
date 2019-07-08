@@ -1,0 +1,29 @@
+{
+  "App": {
+    "troopers": {
+      "home": {
+        "title": "Troopers",
+        "createLabel": "Crear nuevo Troopers",
+        "createOrEditLabel": "Crear o editar Troopers"
+      },
+      "created": "Un nuevo Troopers ha sido creado con el identificador {{ param }}",
+      "updated": "Un Troopers ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Troopers ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Troopers {{ id }}?"
+      },
+      "detail": {
+        "title": "Troopers"
+      },
+      "numero": "Numero",
+      "rango": "Rango",
+      "apodo": "Apodo",
+      "isactive": "Isactive",
+      "amonestacion": "Amonestacion",
+      "rol": "Rol",
+      "fechaEntradaServicio": "Fecha Entrada Servicio",
+      "fechaUltimaProm": "Fecha Ultima Prom",
+      "reclutador": "Reclutador"
+    }
+  }
+}

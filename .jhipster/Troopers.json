@@ -1,0 +1,51 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "numero",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "rango",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "apodo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "isactive",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "amonestacion",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "rol",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fechaEntradaServicio",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "fechaUltimaProm",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "reclutador",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20190708162740",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceImpl",
+    "entityTableName": "troopers",
+    "databaseType": "sql",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}

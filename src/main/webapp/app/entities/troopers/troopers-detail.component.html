@@ -1,0 +1,59 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="troopers">
+            <h2><span jhiTranslate="App.troopers.detail.title">Troopers</span> {{troopers.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="App.troopers.numero">Numero</span></dt>
+                <dd>
+                    <span>{{troopers.numero}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.rango">Rango</span></dt>
+                <dd>
+                    <span>{{troopers.rango}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.apodo">Apodo</span></dt>
+                <dd>
+                    <span>{{troopers.apodo}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.isactive">Isactive</span></dt>
+                <dd>
+                    <span>{{troopers.isactive}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.amonestacion">Amonestacion</span></dt>
+                <dd>
+                    <span>{{troopers.amonestacion}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.rol">Rol</span></dt>
+                <dd>
+                    <span>{{troopers.rol}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.fechaEntradaServicio">Fecha Entrada Servicio</span></dt>
+                <dd>
+                    <span>{{troopers.fechaEntradaServicio}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.fechaUltimaProm">Fecha Ultima Prom</span></dt>
+                <dd>
+                    <span>{{troopers.fechaUltimaProm}}</span>
+                </dd>
+                <dt><span jhiTranslate="App.troopers.reclutador">Reclutador</span></dt>
+                <dd>
+                    <span>{{troopers.reclutador}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/troopers', troopers.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

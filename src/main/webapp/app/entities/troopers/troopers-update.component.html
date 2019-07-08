@@ -1,0 +1,77 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-troopers-heading" jhiTranslate="App.troopers.home.createOrEditLabel">Create or edit a Troopers</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!troopers.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.numero" for="field_numero">Numero</label>
+                    <input type="text" class="form-control" name="numero" id="field_numero"
+                           formControlName="numero"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.rango" for="field_rango">Rango</label>
+                    <input type="text" class="form-control" name="rango" id="field_rango"
+                           formControlName="rango"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.apodo" for="field_apodo">Apodo</label>
+                    <input type="text" class="form-control" name="apodo" id="field_apodo"
+                           formControlName="apodo"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.isactive" for="field_isactive">Isactive</label>
+                    <input type="number" class="form-control" name="isactive" id="field_isactive"
+                           formControlName="isactive"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.amonestacion" for="field_amonestacion">Amonestacion</label>
+                    <input type="number" class="form-control" name="amonestacion" id="field_amonestacion"
+                           formControlName="amonestacion"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.rol" for="field_rol">Rol</label>
+                    <input type="text" class="form-control" name="rol" id="field_rol"
+                           formControlName="rol"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.fechaEntradaServicio" for="field_fechaEntradaServicio">Fecha Entrada Servicio</label>
+                    <div class="input-group">
+                        <input id="field_fechaEntradaServicio" type="text" class="form-control" name="fechaEntradaServicio" ngbDatepicker  #fechaEntradaServicioDp="ngbDatepicker" formControlName="fechaEntradaServicio"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="fechaEntradaServicioDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.fechaUltimaProm" for="field_fechaUltimaProm">Fecha Ultima Prom</label>
+                    <div class="input-group">
+                        <input id="field_fechaUltimaProm" type="text" class="form-control" name="fechaUltimaProm" ngbDatepicker  #fechaUltimaPromDp="ngbDatepicker" formControlName="fechaUltimaProm"/>
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="fechaUltimaPromDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="App.troopers.reclutador" for="field_reclutador">Reclutador</label>
+                    <input type="text" class="form-control" name="reclutador" id="field_reclutador"
+                           formControlName="reclutador"/>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
